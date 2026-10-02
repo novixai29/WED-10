@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <meta
+    name="description"
+    content="دعوة زفاف أحمد ومريم"
+  >
+
+  <meta name="theme-color" content="#111111">
+
+  <title>دعوة زفاف أحمد ومريم</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Kufi+Arabic:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
+</head>
+
+
+<body>
+
+  <!-- =====================================================
+       OPENING — MAGAZINE COVER
+  ====================================================== -->
+
+  <section
+    class="edition-opening"
+    id="editionOpening"
+    aria-labelledby="openingNames"
+  >
+
+    <img
+      src="edition-cover.jpg"
+      class="opening-cover-photo"
+      alt=""
+    >
+
+    <div
+      class="opening-cover-shade"
+      aria-hidden="true"
+    ></div>
+
+
+    <div class="opening-cover-interface">
+
+      <div class="cover-topline">
+
+        <span>
+          SPECIAL WEDDING ISSUE
+        </span>
+
+        <span id="openingIssueNumber">
+          ISSUE 010
+        </span>
+
+      </div>
+
+
+      <div class="cover-masthead">
+        THE WEDDING EDITION
+      </div>
+
+
+      <div class="cover-feature">
+
+        <span class="cover-feature-label">
+          EXCLUSIVE
+        </span>
+
+        <h1 id="openingNames">
+          أحمد
+          <i>×</i>
+          مريم
+        </h1>
+
+        <p>
+          عدد خاص يوثق بداية أجمل فصل
+        </p>
+
+      </div>
+
+
+      <div class="cover-bottom">
+
+        <div>
+
+          <span>
+            DATE
+          </span>
+
+          <strong id="openingDate">
+            14 OCT 2027
+          </strong>
+
+        </div>
+
+
+        <button
+          class="open-edition-button"
+          id="openEdition"
+          type="button"
+        >
+          <span>
+            افتح العدد
+          </span>
+
+          <i aria-hidden="true">
+            →
+          </i>
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div
+      class="cover-turn-layer"
+      aria-hidden="true"
+    ></div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       MAGAZINE EXPERIENCE
+  ====================================================== -->
+
+  <div
+    class="magazine-shell"
+    id="magazineShell"
+  >
+
+    <!-- ===================================================
+         FIXED UI
+    ==================================================== -->
+
+    <div class="magazine-hud">
+
+      <div class="hud-brand">
+        THE WEDDING EDITION
+      </div>
+
+
+      <div class="hud-progress">
+
+        <span id="currentPage">
+          01
+        </span>
+
+        <i></i>
+
+        <span id="totalPages">
+          06
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <div
+      class="page-progress"
+      aria-hidden="true"
+    >
+      <span id="pageProgressBar"></span>
+    </div>
+
+
+    <nav
+      class="page-dots"
+      aria-label="التنقل بين صفحات الدعوة"
+    >
+
+      <button
+        class="page-dot is-active"
+        type="button"
+        data-page="0"
+        aria-label="الصفحة الأولى"
+      ></button>
+
+      <button
+        class="page-dot"
+        type="button"
+        data-page="1"
+        aria-label="الصفحة الثانية"
+      ></button>
+
+      <button
+        class="page-dot"
+        type="button"
+        data-page="2"
+        aria-label="الصفحة الثالثة"
+      ></button>
+
+      <button
+        class="page-dot"
+        type="button"
+        data-page="3"
+        aria-label="الصفحة الرابعة"
+      ></button>
+
+      <button
+        class="page-dot"
+        type="button"
+        data-page="4"
+        aria-label="الصفحة الخامسة"
+      ></button>
+
+      <button
+        class="page-dot"
+        type="button"
+        data-page="5"
+        aria-label="الصفحة السادسة"
+      ></button>
+
+    </nav>
+
+
+    <button
+      class="page-arrow page-arrow-prev"
+      id="prevPage"
+      type="button"
+      aria-label="الصفحة السابقة"
+    >
+      ←
+    </button>
+
+
+    <button
+      class="page-arrow page-arrow-next"
+      id="nextPage"
+      type="button"
+      aria-label="الصفحة التالية"
+    >
+      →
+    </button>
+
+
+
+    <!-- ===================================================
+         HORIZONTAL TRACK
+    ==================================================== -->
+
+    <main
+      class="magazine-track"
+      id="magazineTrack"
+      tabindex="0"
+    >
+
+
+      <!-- =================================================
+           PAGE 01 — EDITOR'S LETTER
+      ================================================== -->
+
+      <section
+        class="issue-page page-editor"
+        aria-labelledby="editorTitle"
+      >
+
+        <div
+          class="issue-number-bg"
+          aria-hidden="true"
+        >
+          010
+        </div>
+
+
+        <div class="editor-grid">
+
+
+          <aside class="editor-side">
+
+            <span>
+              EDITOR'S NOTE
+            </span>
+
+            <strong>
+              01
+            </strong>
+
+          </aside>
+
+
+          <div class="editor-content">
+
+            <span class="editor-kicker">
+              العدد الخاص
+            </span>
+
+            <h2 id="editorTitle">
+              ليست مجرد دعوة
+              <br>
+              بل الصفحة الأولى
+              <br>
+              من فصل جديد
+            </h2>
+
+
+            <p id="invitationText">
+              يسعدنا أن نشارككم بداية حكايتنا
+              وندعوكم لتكونوا جزءاً من ليلة زفاف أحمد ومريم
+              في أمسية نحتفظ بها في الذاكرة
+              وتكتمل بحضور من نحب.
+            </p>
+
+
+            <div class="editor-signature">
+
+              <span id="editorGroom">
+                أحمد
+              </span>
+
+              <i></i>
+
+              <span id="editorBride">
+                مريم
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="editor-footer">
+
+            <span>
+              PRIVATE EDITION
+            </span>
+
+            <span>
+              SWIPE →
+            </span>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           PAGE 02 — TYPOGRAPHY FEATURE
+      ================================================== -->
+
+      <section
+        class="issue-page page-feature"
+        aria-labelledby="featureNames"
+      >
+
+        <div class="feature-column feature-column-left">
+
+          <span>
+            FEATURE STORY
+          </span>
+
+          <small>
+            TWO NAMES
+            <br>
+            ONE STORY
+          </small>
+
+        </div>
+
+
+        <div class="feature-main">
+
+          <div class="feature-date-top">
+            <span id="featureDateTop">
+              OCTOBER 14 — 2027
+            </span>
+          </div>
+
+
+          <h2 id="featureNames">
+
+            <span id="groomName">
+              أحمد
+            </span>
+
+            <i>
+              &
+            </i>
+
+            <span id="brideName">
+              مريم
+            </span>
+
+          </h2>
+
+
+          <p id="heroMessage">
+            نلتقي لنحتفل ببداية العمر
+          </p>
+
+
+          <div class="feature-caption">
+
+            <span>
+              THE COUPLE
+            </span>
+
+            <p>
+              هذا العدد لا يروي قصة انتهت
+              بل قصة تبدأ من هنا.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="feature-vertical-text">
+          WEDDING EDITION · WEDDING EDITION · WEDDING EDITION
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           PAGE 03 — COUNTDOWN ISSUE
+      ================================================== -->
+
+      <section
+        class="issue-page page-countdown"
+        aria-labelledby="countdownTitle"
+      >
+
+        <div class="countdown-header">
+
+          <span>
+            COUNTDOWN
+          </span>
+
+          <span>
+            PAGE 03
+          </span>
+
+        </div>
+
+
+        <div class="countdown-title">
+
+          <span>
+            TIME BEFORE THE ISSUE GOES LIVE
+          </span>
+
+          <h2 id="countdownTitle">
+            حتى تبدأ الليلة
+          </h2>
+
+        </div>
+
+
+        <div
+          class="editorial-countdown"
+          aria-live="polite"
+        >
+
+
+          <div class="countdown-strip">
+
+            <span class="strip-name">
+              DAYS
+            </span>
+
+            <strong id="days">
+              00
+            </strong>
+
+            <small>
+              يوم
+            </small>
+
+          </div>
+
+
+          <div class="countdown-strip">
+
+            <span class="strip-name">
+              HOURS
+            </span>
+
+            <strong id="hours">
+              00
+            </strong>
+
+            <small>
+              ساعة
+            </small>
+
+          </div>
+
+
+          <div class="countdown-strip">
+
+            <span class="strip-name">
+              MINUTES
+            </span>
+
+            <strong id="minutes">
+              00
+            </strong>
+
+            <small>
+              دقيقة
+            </small>
+
+          </div>
+
+
+          <div class="countdown-strip">
+
+            <span class="strip-name">
+              SECONDS
+            </span>
+
+            <strong id="seconds">
+              00
+            </strong>
+
+            <small>
+              ثانية
+            </small>
+
+          </div>
+
+
+        </div>
+
+
+        <p
+          class="countdown-status"
+          id="countdownStatus"
+        ></p>
+
+
+        <div class="countdown-footer">
+          LIVE WEDDING COUNTDOWN
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           PAGE 04 — CALENDAR
+      ================================================== -->
+
+      <section
+        class="issue-page page-calendar"
+        aria-labelledby="calendarTitle"
+      >
+
+        <div class="calendar-heading">
+
+          <div>
+
+            <span>
+              SAVE THIS DATE
+            </span>
+
+            <h2 id="calendarTitle">
+              الموعد
+            </h2>
+
+          </div>
+
+
+          <div class="calendar-month-title">
+
+            <strong id="calendarMonth">
+              أكتوبر
+            </strong>
+
+            <span id="calendarYear">
+              2027
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="calendar-spread">
+
+
+          <div class="calendar-grid-wrap">
+
+            <div class="calendar-weekdays">
+
+              <span>السبت</span>
+              <span>الأحد</span>
+              <span>الاثنين</span>
+              <span>الثلاثاء</span>
+              <span>الأربعاء</span>
+              <span>الخميس</span>
+              <span>الجمعة</span>
+
+            </div>
+
+
+            <div
+              class="calendar-grid"
+              id="calendarGrid"
+            ></div>
+
+          </div>
+
+
+          <aside class="calendar-event-note">
+
+            <span>
+              WEDDING DAY
+            </span>
+
+            <strong id="calendarEventDay">
+              14
+            </strong>
+
+            <p id="eventWeekday">
+              الخميس
+            </p>
+
+            <small id="eventTime">
+              7:00 مساءً
+            </small>
+
+          </aside>
+
+        </div>
+
+
+        <div class="calendar-bottom">
+
+          <span id="eventDate">
+            14 أكتوبر 2027
+          </span>
+
+          <span>
+            ONE DATE · ONE NIGHT · ONE STORY
+          </span>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           PAGE 05 — VENUE SPREAD
+      ================================================== -->
+
+      <section
+        class="issue-page page-venue"
+        aria-labelledby="venueTitle"
+      >
+
+        <div class="venue-photo-side">
+
+          <img
+            src="edition-detail.jpg"
+            alt="صورة سينمائية ثانية للعروسين أحمد ومريم"
+          >
+
+          <div class="venue-photo-caption">
+
+            <span>
+              LOCATION FEATURE
+            </span>
+
+            <strong>
+              PAGE 05
+            </strong>
+
+          </div>
+
+        </div>
+
+
+        <div class="venue-copy-side">
+
+          <span class="venue-overline">
+            WHERE THE STORY CONTINUES
+          </span>
+
+
+          <h2 id="venueTitle">
+            قاعة أوريانا
+          </h2>
+
+
+          <p
+            class="venue-city"
+            id="venueCity"
+          >
+            أربيل
+          </p>
+
+
+          <div class="venue-article">
+
+            <p>
+              وجهة العدد الخاص
+            </p>
+
+            <strong id="venueAddress">
+              أربيل - العراق
+            </strong>
+
+          </div>
+
+
+          <div class="venue-meta">
+
+            <div>
+
+              <span>
+                DATE
+              </span>
+
+              <strong id="venueDate">
+                14 OCT 2027
+              </strong>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                ARRIVAL
+              </span>
+
+              <strong id="venueTime">
+                07:00 PM
+              </strong>
+
+            </div>
+
+          </div>
+
+
+          <a
+            href="#"
+            class="venue-map-button"
+            id="mapsButton"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <span>
+              OPEN LOCATION
+            </span>
+
+            <strong>
+              الاتجاه إلى الحفل
+            </strong>
+
+            <i>
+              ↗
+            </i>
+
+          </a>
+
+
+          <div class="venue-edition-number">
+            05
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           PAGE 06 — BACK COVER
+      ================================================== -->
+
+      <section
+        class="issue-page page-back-cover"
+        aria-labelledby="closingNames"
+      >
+
+        <div class="back-cover-noise"></div>
+
+
+        <div class="back-cover-top">
+
+          <span>
+            FINAL PAGE
+          </span>
+
+          <span>
+            THE WEDDING EDITION
+          </span>
+
+        </div>
+
+
+        <div class="back-cover-center">
+
+          <span class="back-cover-kicker">
+            SEE YOU IN THE NEXT CHAPTER
+          </span>
+
+
+          <p>
+            ننتظركم لنكتب هذه الصفحة معاً
+          </p>
+
+
+          <h2 id="closingNames">
+            أحمد
+            <i>×</i>
+            مريم
+          </h2>
+
+
+          <span
+            class="closing-date"
+            id="closingDate"
+          >
+            14 · OCT · 2027
+          </span>
+
+
+          <div class="back-cover-actions">
+
+
+            <button
+              id="calendarButton"
+              type="button"
+            >
+
+              <span>
+                SAVE
+              </span>
+
+              <strong>
+                إضافة للتقويم
+              </strong>
+
+              <i>
+                +
+              </i>
+
+            </button>
+
+
+            <button
+              id="shareButton"
+              type="button"
+            >
+
+              <span>
+                SHARE
+              </span>
+
+              <strong>
+                مشاركة الدعوة
+              </strong>
+
+              <i>
+                ↗
+              </i>
+
+            </button>
+
+
+          </div>
+
+        </div>
+
+
+        <div class="back-cover-bottom">
+
+          <span id="footerNames">
+            AHMED × MARYAM
+          </span>
+
+          <span>
+            INVITEUS · SPECIAL EDITION
+          </span>
+
+        </div>
+
+      </section>
+
+
+    </main>
+
+  </div>
+
+
+
+  <!-- =====================================================
+       TOAST
+  ====================================================== -->
+
+  <div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+    aria-atomic="true"
+  ></div>
+
+</body>
+
+</html>
